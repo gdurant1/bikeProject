@@ -45,8 +45,6 @@ public abstract class Bike implements BikeParts {
 	@Override
 	public void setSeatType(String newValue){ this.seatType = seatType; }
 
-
-	public abstract void setTyreWidth(int newValue);
 }//end class Bike
 	
 	

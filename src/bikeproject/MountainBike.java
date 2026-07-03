@@ -26,7 +26,7 @@ public class MountainBike extends Bike implements MountainParts{
 		
 	}//end method printDescription
 
-	//implementing getters and setters
+    //implementing getters and setters
 	@Override
 	public String getSuspension(){ return this.suspension; }
 	@Override
