@@ -11,7 +11,6 @@ public interface BikeParts {
     public String getTyres();
     public void setTyres(String newValue);
     public String getSeatType();
-
     public void setSeatType(String newValue);
 
 }//end interface BikeParts
