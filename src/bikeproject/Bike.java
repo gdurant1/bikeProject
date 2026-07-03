@@ -8,7 +8,7 @@ public class Bike implements BikeParts {
 	private final String MAKE;
 	
 	public Bike(){	
-		this.MAKE = "Oracle Cycles";
+		this.MAKE = BikeParts.MAKE;
 	}//end constructor
 	
 	public Bike(String handleBars, String frame, String tyres, String seatType, int numGears) {
@@ -17,7 +17,7 @@ public class Bike implements BikeParts {
 		this.tyres = tyres;
 		this.seatType = seatType;
 		NumGears = numGears;
-		this.MAKE = "Oracle Cycles"; //interface MAKE constant
+		this.MAKE = BikeParts.MAKE; //interface MAKE constant
 	}//end constructor
 
 	protected void printDescription()
