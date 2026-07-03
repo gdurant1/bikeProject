@@ -6,10 +6,10 @@ public interface RoadParts {
     public final String terrain = "track_racing";
 
     //required methods after implementation
-    public String getSuspension();
-    public void setSuspension(String newValue);
-    public String getType();
-    public void setType(String newValue);
+    public String getTyreWidth();
+    public void setTyreWidth(String newValue);
+    public String getPostHeight();
+    public void setPostHeight(String newValue);
 
 
 }//end interface RoadParts
