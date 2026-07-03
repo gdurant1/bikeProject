@@ -1,7 +1,7 @@
 package bikeproject;
 
 // JP 2-2 #5 implement in bike class
-public abstract class Bike implements BikeParts {
+public class Bike implements BikeParts {
 
 	private String handleBars, frame, tyres, seatType;
 	private int NumGears;
