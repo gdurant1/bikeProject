@@ -1,7 +1,7 @@
 package bikeproject;
 
 // JP 2-2 #5 implement in bike class
-public class Bike implements BikeParts {
+public abstract class Bike implements BikeParts {
 
 	private String handleBars, frame, tyres, seatType;
 	private int NumGears;
@@ -46,6 +46,7 @@ public class Bike implements BikeParts {
 	public void setSeatType(String newValue){ this.seatType = seatType; }
 
 
+	public abstract void setTyreWidth(int newValue);
 }//end class Bike
 	
 	
