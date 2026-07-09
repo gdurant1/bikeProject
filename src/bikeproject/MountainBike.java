@@ -5,6 +5,7 @@ public class MountainBike extends Bike implements MountainParts{
 
 	private String suspension, type;
 	private int frameSize;
+	private final String TERRAIN;
 	
 	public MountainBike()
 	{
@@ -17,6 +18,7 @@ public class MountainBike extends Bike implements MountainParts{
 		this.suspension = suspension;
 		this.type = type;
 		this.frameSize = frameSize;
+		this.TERRAIN = MountainParts.TERRAIN;
 	}//end constructor
     
 	public void printDescription()

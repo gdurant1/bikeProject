@@ -4,6 +4,7 @@ package bikeproject;
 public class RoadBike extends Bike implements RoadParts{
 	
 	private int  tyreWidth, postHeight;
+	private final String terrain;
 	
 	public RoadBike()
 	{
@@ -20,6 +21,7 @@ public class RoadBike extends Bike implements RoadParts{
 		super(handleBars, frame, tyres, seatType, numGears);
 		this.tyreWidth = tyreWidth;
 		this.postHeight = postHeight;
+		this.terrain = RoadParts.terrain;
 	}//end constructor
 	
 	public void printDescription()
