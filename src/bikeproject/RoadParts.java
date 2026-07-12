@@ -5,7 +5,7 @@ public interface RoadParts {
     //constant declaration
     public final String terrain = "track_racing";
 
-    //required methods after implementation
+    //required methods implementation
     public int getTyreWidth();
     public void setTyreWidth(int newValue);
     public int getPostHeight();

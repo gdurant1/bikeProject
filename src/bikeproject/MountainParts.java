@@ -5,11 +5,10 @@ public interface MountainParts {
     //constant declaration
     public final String TERRAIN = "Off_Road";
 
-    //required methods after implementation
+    //required methods implementation
     public String getSuspension();
     public void setSuspension(String newValue);
     public String getType();
     public void setType(String newValue);
-
 
 }//end interface MountainParts

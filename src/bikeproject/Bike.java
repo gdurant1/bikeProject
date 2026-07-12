@@ -8,7 +8,7 @@ public abstract class Bike implements BikeParts {
 	private int NumGears;
 	private final String MAKE;
 	
-	public Bike(){	
+	public Bike(){
 		this.MAKE = BikeParts.MAKE;
 	}//end constructor
 	
@@ -22,6 +22,7 @@ public abstract class Bike implements BikeParts {
 	}//end constructor
 
 	// JP 2-3 #3 changed printDescription to toString
+	@Override
 	public String toString() {
 		return "\n" + this.MAKE + "\n"
 				+ "This bike has " + this.handleBars + " handlebars on a "
