@@ -38,12 +38,12 @@ public class Bike implements BikeParts {
 	@Override
 	public String getTyres(){ return this.tyres; }
 	@Override
-	public void setTyres(String newValue){ this.tyres = tyres; }
+	public void setTyres(String newValue){ this.tyres = newValue; }
 
 	@Override
 	public String getSeatType(){ return this.seatType; }
 	@Override
-	public void setSeatType(String newValue){ this.seatType = seatType; }
+	public void setSeatType(String newValue){ this.seatType = newValue; }
 
 }//end class Bike
 	
