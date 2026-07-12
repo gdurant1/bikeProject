@@ -5,7 +5,7 @@ package bikeproject;
 public abstract class Bike implements BikeParts {
 
 	private String handleBars, frame, tyres, seatType;
-	private int NumGears;
+	private int numGears;
 	private final String MAKE;
 	
 	public Bike(){
@@ -17,7 +17,7 @@ public abstract class Bike implements BikeParts {
 		this.frame = frame;
 		this.tyres = tyres;
 		this.seatType = seatType;
-		NumGears = numGears;
+		this.numGears = numGears;
 		this.MAKE = BikeParts.MAKE; //interface MAKE constant
 	}//end constructor
 
@@ -26,7 +26,7 @@ public abstract class Bike implements BikeParts {
 	public String toString() {
 		return "\n" + this.MAKE + "\n"
 				+ "This bike has " + this.handleBars + " handlebars on a "
-				+ this.frame + " frame with " + this.NumGears + " gears."
+				+ this.frame + " frame with " + this.numGears + " gears."
 				+ "\nIt has a " + this.seatType + " seat with " + this.tyres + " tyres.";
 	}//end method printDescription
 
