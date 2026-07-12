@@ -1,7 +1,8 @@
 package bikeproject;
 
 // JP 2-2 #5 implement in bike class
-public class Bike implements BikeParts {
+// JP 2-3 #1 changed to abstract, cannot make bike object
+public abstract class Bike implements BikeParts {
 
 	private String handleBars, frame, tyres, seatType;
 	private int NumGears;
@@ -20,8 +21,8 @@ public class Bike implements BikeParts {
 		this.MAKE = BikeParts.MAKE; //interface MAKE constant
 	}//end constructor
 
-	protected void printDescription()
-	{
+
+	protected void printDescription() {
 		System.out.println("\n" + this.MAKE + "\n"
 				          + "This bike has " + this.handleBars + " handlebars on a " 
 				          + this.frame + " frame with " + this.NumGears + " gears."  
