@@ -21,12 +21,13 @@ public abstract class Bike implements BikeParts {
 		this.MAKE = BikeParts.MAKE; //interface MAKE constant
 	}//end constructor
 
-
-	protected void printDescription() {
-		System.out.println("\n" + this.MAKE + "\n"
+	// JP 2-3 #3 convert printDecription to toString()
+	@Override
+	public String toString() {
+		return "\n" + this.MAKE + "\n"
 				          + "This bike has " + this.handleBars + " handlebars on a " 
 				          + this.frame + " frame with " + this.NumGears + " gears."  
-				          + "\nIt has a " + this.seatType + " seat with " + this.tyres + " tyres.");
+				          + "\nIt has a " + this.seatType + " seat with " + this.tyres + " tyres.";
 	}//end method printDescription
 
 	//implementation bikeParts
