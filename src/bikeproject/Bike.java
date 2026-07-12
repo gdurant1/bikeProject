@@ -1,8 +1,7 @@
 package bikeproject;
 
 // JP 2-2 #5 implement in bike class
-// JP 2-3 #1 changed to abstract, cannot create bike object
-public abstract class Bike implements BikeParts {
+public class Bike implements BikeParts {
 
 	private String handleBars, frame, tyres, seatType;
 	private int NumGears;
@@ -21,13 +20,12 @@ public abstract class Bike implements BikeParts {
 		this.MAKE = BikeParts.MAKE; //interface MAKE constant
 	}//end constructor
 
-	// JP 2-3 #3 change printDescription to toString
-	@Override
-	public String toString() {
-		return "\n" + this.MAKE + "\n"
-				+ "This bike has " + this.handleBars + " handlebars on a "
-				+ this.frame + " frame with " + this.NumGears + " gears."
-				+ "\nIt has a " + this.seatType + " seat with " + this.tyres + " tyres.";
+	protected void printDescription()
+	{
+		System.out.println("\n" + this.MAKE + "\n"
+				          + "This bike has " + this.handleBars + " handlebars on a " 
+				          + this.frame + " frame with " + this.NumGears + " gears."  
+				          + "\nIt has a " + this.seatType + " seat with " + this.tyres + " tyres.");
 	}//end method printDescription
 
 	//implementation bikeParts
