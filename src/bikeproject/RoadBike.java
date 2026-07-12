@@ -6,13 +6,11 @@ public class RoadBike extends Bike implements RoadParts{
 	private int  tyreWidth, postHeight;
 	private final String terrain;
 	
-	public RoadBike()
-	{
+	public RoadBike() {
 		this("drop", "racing", "tread less", "razor", 19, 20, 22);
 	}//end constructor
 	
-	public RoadBike(int postHeight)
-	{
+	public RoadBike(int postHeight) {
 		this("drop", "racing", "tread less", "razor", 19, 20, postHeight);
 	}//end constructor
 		
@@ -23,12 +21,12 @@ public class RoadBike extends Bike implements RoadParts{
 		this.postHeight = postHeight;
 		this.terrain = RoadParts.terrain;
 	}//end constructor
-	
-	public void printDescription()
-	{
-		super.printDescription();
-		System.out.println("This Road bike has " + this.tyreWidth + "mm tyres and a post height of " + this.postHeight + ".");
-	}//end method printDescription
+
+	// JP 2-3 #3 changed printDescription to toString
+	@Override
+	public String toString(){
+		return super.toString() + "\n" + this.terrain + "\n" + "\nThis Road bike has " + this.tyreWidth + "mm tyres and a post height of " + this.postHeight + ".";
+	}//end method toString
 
 	//implement get/set for tyre width
 	@Override
