@@ -28,12 +28,13 @@ public class MountainBike extends Bike implements MountainParts{
 		
 	}//end method printDescription
 
-    //implementing getters and setters
+    //implementing get/set for suspension
 	@Override
 	public String getSuspension(){ return this.suspension; }
 	@Override
 	public void setSuspension(String newValue){ this.suspension = newValue; }
 
+	//mplementing get/set for type
 	@Override
 	public String getType(){ return this.type; }
 	@Override

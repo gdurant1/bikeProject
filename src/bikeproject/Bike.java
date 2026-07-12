@@ -30,16 +30,19 @@ public class Bike implements BikeParts {
 
 	//implementation bikeParts
 
+	// get/set for handle bars
 	@Override
 	public String getHandleBars() { return this.handleBars; }
 	@Override
 	public void setHandleBars(String newValue){ this.handleBars = newValue; }
 
+	// get/set for tyres
 	@Override
 	public String getTyres(){ return this.tyres; }
 	@Override
 	public void setTyres(String newValue){ this.tyres = newValue; }
 
+	// get/set for seat type
 	@Override
 	public String getSeatType(){ return this.seatType; }
 	@Override

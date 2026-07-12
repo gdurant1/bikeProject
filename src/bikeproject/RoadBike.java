@@ -30,12 +30,13 @@ public class RoadBike extends Bike implements RoadParts{
 		System.out.println("This Road bike has " + this.tyreWidth + "mm tyres and a post height of " + this.postHeight + ".");
 	}//end method printDescription
 
-	//implement getters and setters
+	//implement get/set for tyre width
 	@Override
 	public int getTyreWidth(){ return this.tyreWidth; }
 	@Override
 	public void setTyreWidth(int newValue){ this.tyreWidth = newValue; }
 
+	//implement get/set post height
 	@Override
 	public int getPostHeight(){ return this.postHeight; }
 	@Override
