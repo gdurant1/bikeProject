@@ -24,9 +24,9 @@ public class RoadBike extends Bike implements RoadParts{
 		this.terrain = RoadParts.terrain;
 	}//end constructor
 
+	// JP 2-3 #3 convert printDecription to toString()
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return "\n" + this.terrain + "\n" + "This Road bike has " + this.tyreWidth + "mm tyres and a post height of " + this.postHeight + ".";
 	}//end method printDescription
 

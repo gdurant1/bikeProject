@@ -21,9 +21,9 @@ public class MountainBike extends Bike implements MountainParts{
 		this.TERRAIN = MountainParts.TERRAIN;
 	}//end constructor
 
+	// JP 2-3 #3 convert printDecription to toString()
 	@Override
-	public String toString()
-	{
+	public String toString() {
 		return  "\n" + this.TERRAIN + "\n" + "This mountain bike is a " + this.type + " bike and has a " + this.suspension + " suspension and a frame size of " + this.frameSize + "inches.";
 	}//end method printDescription
 
