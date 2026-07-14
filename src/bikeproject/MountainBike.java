@@ -5,9 +5,9 @@ public class MountainBike extends Bike implements MountainParts{
 
 	private String suspension, type;
 	private int frameSize;
+	private final String TERRAIN;
 	
-	public MountainBike()
-	{
+	public MountainBike() {
 		this("Bull Horn", "Hardtail", "Maxxis", "dropper", 27, "RockShox XC32", "Pro", 19);
 	}//end constructor
 	
@@ -17,21 +17,24 @@ public class MountainBike extends Bike implements MountainParts{
 		this.suspension = suspension;
 		this.type = type;
 		this.frameSize = frameSize;
+		this.TERRAIN = MountainParts.TERRAIN;
 	}//end constructor
-    
-	public void printDescription()
-	{
-		super.printDescription();
-		System.out.println("This mountain bike is a " + this.type + " bike and has a " + this.suspension + " suspension and a frame size of " + this.frameSize + "inches.");
-		
+
+	// JP 2-3 #3 changed printDescription to toString
+	@Override
+	public String toString(){
+		return super.toString() + "\n" + this.TERRAIN + "\n" + "This mountain bike is a "
+				+ this.type + " bike and has a " + this.suspension + " suspension and a frame size of "
+				+ this.frameSize + "inches.";
 	}//end method printDescription
 
-    //implementing getters and setters
+    //implementing get/set for suspension
 	@Override
 	public String getSuspension(){ return this.suspension; }
 	@Override
 	public void setSuspension(String newValue){ this.suspension = newValue; }
 
+	//mplementing get/set for type
 	@Override
 	public String getType(){ return this.type; }
 	@Override
