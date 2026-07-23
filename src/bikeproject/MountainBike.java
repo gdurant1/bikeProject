@@ -21,11 +21,13 @@ public class MountainBike extends Bike implements MountainParts{
 	}//end constructor
 
 	// JP 2-3 #3 changed printDescription to toString
+	// JP 3-1 #3 changed toString to display required format
 	@Override
 	public String toString(){
-		return super.toString() + "\n" + this.TERRAIN + "\n" + "This mountain bike is a "
-				+ this.type + " bike and has a " + this.suspension + " suspension and a frame size of "
-				+ this.frameSize + "inches.";
+		return super.toString() + "\nThis mountain bike is a " + this.type + " bike and has a "
+				+ this.suspension + " suspension and a frame size of "
+				+ this.frameSize + " inches.\n"
+				+ "This bike is best for " + this.TERRAIN;
 	}//end method printDescription
 
     //implementing get/set for suspension

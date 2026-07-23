@@ -3,7 +3,9 @@ package bikeproject;
 // JP 2-2 #3 create interface
 public interface MountainParts {
     //constant declaration
-    public final String TERRAIN = "Off_Road";
+    // JP 3-1 #3 commented out original and replace with enum
+    //public final String TERRAIN = "Off_Road";
+    public final String TERRAIN = BikeUses.off_road.toString();
 
     //required methods implementation
     public String getSuspension();
